@@ -124,7 +124,7 @@ class App extends React.Component {
       <div className="wrapper h-screen 2xl:min-h-[800px]">
         <div className="w-full lg:w-2/3 h-full mx-0 lg:mx-auto flex items-center">
           <div className="weather-block  lg:min-h-[400px] lg:min-w-[680px] flex-row lg:flex w-full h-full lg:h-3/4 bg-sky-500 rounded shadow-lg">
-            <div className="titleWeather relative bg-cover bg-center w-full h-1/2 lg:h-full lg:w-2/5 rounded">
+            <div className="titleWeather bg-cover bg-center w-full h-1/2 lg:h-full lg:w-2/5 rounded">
               <div className="grid absolute h-full w-full bg-black bg-opacity-70 text-slate-200 pt-20 2xl:pt-40 text-center rounded-l">
                <Info1 />
               </div>
@@ -141,7 +141,7 @@ class App extends React.Component {
                   // sunset={this.state.sunset}
                   // error={this.state.error}
                 />
-              <div className="preloader hidden absolute top-0 bg-black opacity-50 w-full h-screen"> 
+              <div className="preloader hidden absolute top-0 bg-black opacity-50 w-full h-full"> 
                 <img src={loader} alt="" className="absolute top-0 bottom-0 left-0 right-0 m-auto"/>
               </div>
                 
