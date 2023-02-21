@@ -25,7 +25,7 @@ class App extends React.Component {
 
   gettingWeather = async (e) => {
     e.preventDefault();
-    let city = e.target.elements.city.value.trimEnd();
+    let city = (e.target.elements.city.value).trimEnd();
     let loader = document.querySelector('.preloader');
     loader.style.display='block';
     if(city){
