@@ -31,7 +31,7 @@ class App extends React.Component {
     if(city){
       const API_URL = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
       const data = await API_URL.json();
-console.log(data);
+      e.target.elements.city.value ='';
       if(data){
         loader.style.display='none'
       }
